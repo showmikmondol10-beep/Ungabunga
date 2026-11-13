@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f1efff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
+<title>CPSCR Cultural Fest | Registration</title>
+<style>
+:root{--ink:#24233a;--muted:#77768c;--purple:#6757d9;--purple2:#8d7cf0;--line:#e8e6f2;--bg:#f6f5fb}
+*{box-sizing:border-box}button,input,select,textarea{font-family:inherit}body{margin:0;min-height:100vh;background:linear-gradient(135deg,#f4f0ff 0%,#eef8ff 48%,#f4f1ff 100%);font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);display:flex;align-items:center;justify-content:center;padding:34px 16px}
+.bubble-scene{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.bubble{position:absolute;bottom:-130px;display:block;border-radius:50%;border:1px solid #ffffffb8;background:linear-gradient(135deg,#ffffff80,#b9adff20);box-shadow:inset 0 0 22px #ffffff70,0 8px 28px #8171e51c;animation:float-up linear infinite}
+.b1{left:5%;width:34px;height:34px;animation-duration:19s;animation-delay:-3s}
+.b2{left:17%;width:72px;height:72px;animation-duration:26s;animation-delay:-15s}
+.b3{left:31%;width:22px;height:22px;animation-duration:17s;animation-delay:-8s}
+.b4{left:43%;width:48px;height:48px;animation-duration:23s;animation-delay:-4s}
+.b5{left:58%;width:88px;height:88px;animation-duration:29s;animation-delay:-20s}
+.b6{left:70%;width:28px;height:28px;animation-duration:18s;animation-delay:-10s}
+.b7{left:81%;width:58px;height:58px;animation-duration:25s;animation-delay:-12s}
+.b8{left:93%;width:35px;height:35px;animation-duration:20s;animation-delay:-6s}
+.b9{left:25%;width:16px;height:16px;animation-duration:15s;animation-delay:-2s}
+.b10{left:64%;width:18px;height:18px;animation-duration:16s;animation-delay:-11s}
+@keyframes float-up{0%{transform:translate3d(0,0,0) scale(.75);opacity:0}10%{opacity:.7}50%{transform:translate3d(35px,-55vh,0) scale(1.05)}90%{opacity:.5}100%{transform:translate3d(-25px,-115vh,0) scale(1.2);opacity:0}}
+.shell{width:min(100%,720px);position:relative;z-index:1}.topline{display:flex;align-items:center;gap:10px;margin:0 0 18px 6px;color:#77748e;font-size:13px;font-weight:650;letter-spacing:.08em;text-transform:uppercase}.mark{width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,var(--purple),#a08cf7);display:grid;place-items:center;color:white;font-size:16px;box-shadow:0 5px 14px #6757d933}
+.card{background:#fff;border:1px solid #eeecf5;border-radius:26px;overflow:hidden;box-shadow:0 22px 70px #35305b14}.hero{padding:34px 38px 30px;background:linear-gradient(120deg,#6655d5,#8877ed);color:#fff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:210px;height:210px;border:1px solid #ffffff30;border-radius:50%;right:-55px;top:-100px;box-shadow:0 0 0 25px #ffffff0b,0 0 0 55px #ffffff08}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.13em;opacity:.8;font-weight:700}.hero h1{font-size:clamp(27px,5vw,37px);line-height:1.15;margin:12px 0 9px;letter-spacing:-.04em}.hero p{margin:0;max-width:470px;color:#eeebff;font-size:14px;line-height:1.65}.formbody{padding:32px 38px 36px}.section-title{font-size:14px;font-weight:750;margin:0 0 22px;display:flex;align-items:center;gap:10px}.section-title:before{content:"";width:4px;height:18px;border-radius:4px;background:var(--purple)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:21px 18px}.field.full{grid-column:1/-1}label{display:block;font-size:13px;font-weight:700;margin-bottom:9px;color:#39384e}.required{color:#e15b73}.hint{font-size:11px;color:#9290a3;font-weight:500;margin-left:4px}.control{width:100%;height:49px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;color:var(--ink);font:inherit;font-size:14px;outline:none;transition:.2s}.control::placeholder{color:#aaa8b8}.control:focus{border-color:var(--purple2);box-shadow:0 0 0 4px #8171e51b}.select-wrap{position:relative}.select-wrap:after{content:"⌄";position:absolute;right:15px;top:11px;color:#77748e;font-size:20px;pointer-events:none}.select-wrap select{appearance:none;padding-right:40px}.pay-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.pay-option{position:relative}.pay-option input{position:absolute;opacity:0;inset:0}.pay-option span{min-height:47px;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:13px;font-weight:650;color:#66647b;cursor:pointer;transition:.2s}.pay-option input:checked+span{border-color:var(--purple);background:#f2f0ff;color:#5142bf;box-shadow:inset 0 0 0 1px var(--purple)}.pay-option input:focus-visible+span{outline:3px solid #8171e54d}.actions{margin-top:29px}.submit{width:100%;height:52px;border:0;border-radius:13px;background:linear-gradient(100deg,#6655d5,#8978ed);color:#fff;font-size:15px;font-weight:750;letter-spacing:.01em;cursor:pointer;box-shadow:0 9px 20px #6757d933;transition:transform .2s,box-shadow .2s}.submit:hover{transform:translateY(-2px);box-shadow:0 13px 24px #6757d944}.submit:active{transform:translateY(0)}.privacy{font-size:11px;color:#9694a6;text-align:center;line-height:1.6;margin:14px 0 0}.footer{text-align:center;color:#9290a3;font-size:11px;margin:17px 0 0}.success{display:none;text-align:center;padding:55px 30px 60px}.success-icon{width:64px;height:64px;border-radius:50%;background:#e8f7f0;color:#239967;display:grid;place-items:center;font-size:30px;margin:0 auto 18px}.success h2{font-size:25px;margin:0 0 9px}.success p{color:var(--muted);font-size:14px;line-height:1.6;margin:0 auto 22px;max-width:390px}.again{border:1px solid #dcd8f4;color:#5b4bc8;background:#f7f6ff;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer}
+@media(prefers-reduced-motion:reduce){.bubble{animation:none;display:none}}
+@media(max-width:560px){body{padding:18px 12px;align-items:flex-start}.hero{padding:28px 24px}.formbody{padding:27px 23px 29px}.grid{grid-template-columns:1fr;gap:18px}.field.full{grid-column:auto}.pay-options{grid-template-columns:1fr 1fr}.topline{margin-left:3px}.card{border-radius:21px}}
+</style>
+</head>
+<body>
+<div class="bubble-scene" aria-hidden="true">
+  <span class="bubble b1"></span><span class="bubble b2"></span>
+  <span class="bubble b3"></span><span class="bubble b4"></span>
+  <span class="bubble b5"></span><span class="bubble b6"></span>
+  <span class="bubble b7"></span><span class="bubble b8"></span>
+  <span class="bubble b9"></span><span class="bubble b10"></span>
+</div>
+<main class="shell">
+  <div class="topline"><span class="mark">✦</span> CPSCR STUDENTS FORM</div>
+  <section class="card">
+    <header class="hero">
+      <div class="eyebrow">Student information form</div>
+      <h1>Get yourself In Cultural Fest</h1>
+      <p>Please complete the details below carefully. Make sure your name and student ID are correct before submitting.</p>
+    </header>
+    <div class="formbody" id="formArea">
+      <h2 class="section-title">Your details</h2>
+      <form id="studentForm">
+        <div class="grid">
+          <div class="field full">
+            <label for="name">Full name <span class="required">*</span></label>
+            <input class="control" id="name" name="name" type="text" placeholder="Enter your full name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="class">Class <span class="required">*</span></label>
+            <div class="select-wrap"><select class="control" id="class" name="class" required><option value="" disabled selected>Select class</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></div>
+          </div>
+          <div class="field">
+            <label for="section">Section <span class="required">*</span></label>
+            <div class="select-wrap"><select class="control" id="section" name="section" required><option value="" disabled selected>Select section</option><option>Shapla</option><option>Joba</option><option>Golap</option><option>Bely</option></select></div>
+          </div>
+          <div class="field full">
+            <label for="studentId">Student ID <span class="required">*</span></label>
+            <input class="control" id="studentId" name="studentId" type="text" placeholder="Enter your student ID" required>
+          </div>
+          <div class="field full">
+            <label>Payment method <span class="required">*</span></label>
+            <div class="pay-options">
+              <label class="pay-option"><input type="radio" name="payment" value="Cash" required><span>💵 Cash</span></label>
+              <label class="pay-option"><input type="radio" name="payment" value="bKash"><span>📱 bKash</span></label>
+              <label class="pay-option"><input type="radio" name="payment" value="Nagad"><span>📲 Nagad</span></label>
+              <label class="pay-option"><input type="radio" name="payment" value="Rocket"><span>🚀 Rocket</span></label>
+              <label class="pay-option"><input type="radio" name="payment" value="Bank transfer"><span>🏦 Bank transfer</span></label>
+              <label class="pay-option"><input type="radio" name="payment" value="Other"><span>＋ Other</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="actions"><button class="submit" type="submit">Submit registration&nbsp; →</button><p class="privacy">Your information should only be shared with the authorized form administrator.</p></div>
+      </form>
+    </div>
+  </section>
+  <p class="footer">A simple, secure-minded student registration experience</p>
+</main>
+<script>
+const GOOGLE_APPS_SCRIPT_URL = "PASTE_YOUR_DEPLOYED_WEB_APP_URL_HERE";
+const form=document.getElementById('studentForm');
+const submitButton=form.querySelector('.submit');
+const originalButtonText=submitButton.innerHTML;
+
+form.addEventListener('submit', async function(e){
+  e.preventDefault();
+  if(!form.reportValidity()) return;
+
+  if (!GOOGLE_APPS_SCRIPT_URL.startsWith('https://script.google.com/macros/s/')) {
+    alert('The registration system is not connected yet. The administrator must add the Google Apps Script Web App URL.');
+    return;
+  }
+
+  const data = Object.fromEntries(new FormData(form).entries());
+  submitButton.disabled = true;
+  submitButton.textContent = 'Submitting...';
+
+  try {
+    // text/plain avoids a CORS preflight for Google Apps Script.
+    // The endpoint is fixed by the administrator; no student-supplied email is accepted.
+    await fetch(GOOGLE_APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'text/plain;charset=utf-8'},
+      body: JSON.stringify(data)
+    });
+
+    window.location.href = 'confirmation.html';
+  } catch (error) {
+    alert('We could not send your registration. Please check your internet connection and try again.');
+    submitButton.disabled = false;
+    submitButton.innerHTML = originalButtonText;
+  }
+});
+
+</script>
+</body>
+</html>
